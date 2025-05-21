@@ -1,0 +1,65 @@
+!DOCTYPE html
+html lang=en
+head
+  meta charset=UTF-8
+  titleShining Blue Buttontitle
+  style
+    body {
+      background-color #0d1117;
+      display flex;
+      justify-content center;
+      align-items center;
+      height 100vh;
+      margin 0;
+      font-family 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .shine-button {
+      position relative;
+      padding 15px 40px;
+      font-size 20px;
+      color #fff;
+      background linear-gradient(145deg, #0e76a8, #1e90ff);
+      border none;
+      border-radius 10px;
+      cursor pointer;
+      box-shadow 0 0 15px rgba(30, 144, 255, 0.6),
+                  0 0 30px rgba(30, 144, 255, 0.4);
+      overflow hidden;
+      transition background 0.4s, box-shadow 0.4s;
+    }
+
+    .shine-buttonbefore {
+      content '';
+      position absolute;
+      top -50%;
+      left -50%;
+      width 200%;
+      height 200%;
+      background linear-gradient(120deg, rgba(255, 255, 255, 0.2) 0%, transparent 60%);
+      transform rotate(25deg);
+      animation shine 2s infinite linear;
+    }
+
+    @keyframes shine {
+      0% {
+        transform translateX(-100%) rotate(25deg);
+      }
+      100% {
+        transform translateX(100%) rotate(25deg);
+      }
+    }
+
+    .shine-buttonhover {
+      box-shadow 0 0 25px rgba(30, 144, 255, 0.9),
+                  0 0 60px rgba(30, 144, 255, 0.6);
+    }
+  style
+head
+body
+
+  button class=shine-buttonShiny Bluebutton
+
+body
+html
+
